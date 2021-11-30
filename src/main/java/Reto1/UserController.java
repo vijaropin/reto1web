@@ -4,7 +4,6 @@
  */
 package Reto1;
 
-
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -19,7 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 /**
  *
- * @author usuario
+ * @author USUARIO
  */
 @RestController
 @RequestMapping("/api/user")
@@ -47,5 +46,6 @@ public class UserController {
     @GetMapping("/{email}")
     public boolean existeEmail(@PathVariable("email") String email) {
         return userService.existeEmail(email);
-    }   
+    }
+    
 }

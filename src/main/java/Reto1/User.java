@@ -17,9 +17,11 @@ import lombok.NoArgsConstructor;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 
+
+
 /**
  *
- * @author Usuario
+ * @author USUARIO
  */
 @Entity
 @Data
@@ -30,7 +32,7 @@ public class User implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    @NonNull
+      @NonNull
     @Column(name = "user_email", nullable = false, length = 50)
     private String email;
     @NonNull
@@ -38,5 +40,6 @@ public class User implements Serializable {
     private String password;
     @NonNull
     @Column(name = "user_name", nullable = false, length = 80)
-    private String name;   
+    private String name; 
+        
 }
